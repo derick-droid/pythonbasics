@@ -1,16 +1,18 @@
-# This is a sample Python script.
+for x in range (5):
+    for y in range (4):
+        print(f"{x}, {y} ")
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+#EXERCISE OF NESTED LOOPS
 
+numbers = [5, 2, 5, 2, 2 ]
+for number in numbers: # BUT NO NESTED LOOPS USED
+    print("*" * number)
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+# USING NESTED LOOPS
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+numbers = [5, 2, 5, 2, 2]
+for number in numbers:
+    output = ""
+    x_counts = output
+    for item in x_counts:
+        print("*" * item)
