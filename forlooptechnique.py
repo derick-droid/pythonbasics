@@ -1,17 +1,11 @@
-# printing alternating D and C
-print("A")
-print("B")
-for i in range(5):
-    print("C")
-    print("D")
-
-print("out of the loop")
-# printing five c firsst the d follows
-
-print("A")
-print("B")
-for i in range(5):
-    print("C")
-for i in range(5):
-    print("D")
-print("out of the loop")
+for i in  range(1, 10):
+    print(i+1, "-----derrick")
+print()
+for i in range(10):
+    print("derrick")
+    print()
+for i in range(3, 7):
+    print(i,  "---derrick")
+    print()
+for i in range(5, 2, -1):
+    print(i, "---derrick")
