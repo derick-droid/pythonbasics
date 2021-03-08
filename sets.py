@@ -1,37 +1,28 @@
-# python sets rejects duplicates
-# sets is collection of data
-a = set()
-print(a)
-a.add(45)
-print(a)
-a.add(45) # sets rejects duplication
-print(a)
+# sets sorting of data is not considered
+# sets don't allow any duplication of data
 
-# iterating over a set
+# sets can be used to check if two sets share common data this can be by using the intersection function
 
-for elements in a:
-    print(elements)
+course = {"maths", "Compsci", "chemistry", "history", "statistics", "Compsci"}
+print(course)
 
-# using sets to remove duplicate in alist
-numbers = [1, 2, 3, 4, 4, 1, 44, 22, 22, 1,]
-new_set = set()
-for elements in numbers:
-    new_set.add(elements)
-print(new_set)
+print()
+art_course = {"maths", "Compsci", "geography", "physics", "biology", "music"}
+bus_course = {"maths", "computer ", "java ", "googles", "modes", "dental"}
+print(course.intersection(art_course, bus_course))
 
-# adding different value types in python
+print()
+# want show not common data in the available sets we use the "difference" function
 
-c= set()
-c.add("microsoft")
-c.add("apple")
-c.add(23)
-print(c)  # sets do not maintain the order of the elements added into it
+print(course.difference(art_course, bus_course))
+# combine thes sets together we use the union function
 
-# adding the unique values in a list
-numbers1 = [1, 2, 1, 4, 3, 4, 5, 5, 6, 6]
-uniques = set()
-for items in numbers1:
-    uniques.add(items)
-for items in uniques:
-    result = items + items
-print(result)
+print()
+
+print(course.union(art_course, bus_course))
+
+# creating empty set we the set function
+
+empty_set = set()
+
+
