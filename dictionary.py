@@ -1,37 +1,16 @@
-# DICTIONARY ARE USED TO STORE KEY INFORMATION
+# using while loop with the dictionary
+# filling a dictionary with user input
 
-customer = {
-
-    "name ": "derrick kibs",
-    "age " : 30,
-    "phone " : 1234
-
-}
-print(customer["name "])
-print(customer["age "])
-print(customer["phone "])
-print(customer.get("birthdate"))  # TO KNOW IF A KEY VALUE EXIST IN A DICTIONARY
-print(customer.get("birth date ", "jan 12 2006")) # ADDING A KEY WHICH DOES NOT EXIST IN THE DICTIONARY
-
-#  DICTIONARY EXERCISE
-#  IF I TYPE INTEGERS I GET OUTPUT IN WORDS
-
-number = input("enter numbers: ")
-numbers = {
-    "zero": 0,
-    "one": 1,
-    "two": 2,
-    "three": 3,
-    "four": 4,
-    "five": 5,
-    "six": 6,
-    "seven": 7,
-    "eight": 8,
-    "nine": 9
-}
-for items in number:
-    if items == 1:
-        print("one")
-
-
-
+responses = {}
+# prompting user to enter name and mountain to climb
+poll_active = True
+while poll_active:
+    name = input("enter your name: ")
+    mountain = input("enter mountain: ")
+    responses[name] = mountain
+    request = input("would like somebody else to come (yes/no: ")
+    if request.lower() == "no":
+        poll_active = False
+print("this are the result: ")
+for name, mountain in responses.items():
+    print(f"{name} likes {mountain}")
