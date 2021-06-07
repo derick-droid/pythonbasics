@@ -1,8 +1,15 @@
-def welcoming_greet():
-    print("hello there ")
-    print("how are you doing")
+def pop ():
+    """ description of greeting"""
+    print("hello")
 
+print("come")
+pop()
+print("jaya")
+print()
+# passing information to a function
 
-print("welcome for work")
-welcoming_greet()
-print("thank you")
+def great_user(name):
+    print(f"hello {name} ")
+
+great_user("john")
+    
