@@ -1,16 +1,31 @@
-# using while loop with the dictionary
-# filling a dictionary with user input
+# returning dictionary in functionn
+def user_dictionary (first_name, last_name):
+    full = {
+       "first_name"  : first_name,
+        "last_name" : last_name
+    }
+    return full 
+    
+musician = user_dictionary("ford", "dancan")
+print(musician)
+# using optinal values in dictionary
 
-responses = {}
-# prompting user to enter name and mountain to climb
-poll_active = True
-while poll_active:
-    name = input("enter your name: ")
-    mountain = input("enter mountain: ")
-    responses[name] = mountain
-    request = input("would like somebody else to come (yes/no: ")
-    if request.lower() == "no":
-        poll_active = False
-print("this are the result: ")
-for name, mountain in responses.items():
-    print(f"{name} likes {mountain}")
+def dev_person(occupation, age, home_town = ""):
+    if home_town:
+         person = {
+        "occupation" : occupation,
+        "age" : age,
+        "home_town" : home_town
+    }
+         return person
+    else:
+        person = {
+            "occupation" : occupation,
+            "age" : age
+        }
+    return person
+
+user = dev_person("software developer", "23", "Migori")
+print(user)
+
+    
