@@ -1,15 +1,19 @@
-class Point(): # defining a class
-    def move(self):
-        print("move the point ")
+# creating a class for a dog
+class Dog:
 
-    def draw(self):
-        print("drawing the point ")
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def sit(self):
+        print(f"the dog {self.name} is now sitting")
+
+    def rollover(self):
+        print(f"{self.name} is rolling")
+
+# creating instance of a class
 
 
-movement = Point()
-movement.x = 12 # attribute objects
-movement.z = 23
-movement.draw()
-movement.move()
-print(movement.x)
-print(movement.z)
+my_dog = Dog("rex", 23)
+print(f"my dog name is {my_dog.name}")
+print(f"my dog is {my_dog.age} old")
